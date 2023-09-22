@@ -22,6 +22,13 @@ public class Produit {
                 +" La maraque est :"+ this.marque+"la prix est :"+this.prix);
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "identifiant=" + identifiant +
+                ", libelle='" + libelle + '\'' +
+                ", marque='" + marque + '\'' +
+                ", prix=" + prix +
+                '}';
+    }
 }
