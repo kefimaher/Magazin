@@ -1,12 +1,16 @@
 public class Magazin {
 
-    int[] tab = new int[10];
+    Produit[] tab = new Produit[10];
+    int comptprod ;
     int id ;
     String adresse ;
     int capacite ;
-   int[] tab1={1,2,3} ;
-   for (int i=0;i<10;i++)
-    {
 
-    }
+    public Magazin(){};
+    public Magazin(String adresse , int capacite)
+    {
+        this.adresse=adresse ;
+        this.capacite = capacite ;
+    };
+
 }
