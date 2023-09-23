@@ -11,7 +11,7 @@ public class Main {
         p2.affiche();
         p3.affiche();
 
-      //  p1.toString() ;
+        p1.toString() ;
 
     }
 }
