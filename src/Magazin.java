@@ -1,66 +1,47 @@
 public class Magazin {
 
-    Produit[] tab = new Produit[10];
-    int comptprod ;
-    int id ;
-    String adresse ;
-    int capacite ;
+    int identifiant;
+    String adresse;
 
-    public Magazin(){};
-    public Magazin(String adresse , int capacite)
+    final int CAPACITE_PRD=50;
+
+    Produit [] tabprod=new Produit[CAPACITE_PRD];
+
+    int compprod;
+
+    public Magazin()
+    {}
+
+    public Magazin(int id,String ad)
     {
-        this.adresse=adresse ;
-        this.capacite = capacite ;
+        identifiant=id;
+        adresse=ad;
     }
 
-    public Magazin (int id,String adresse ){
-        this.id = id ;
-        this.adresse = adresse  ;
+    public void ajouter(Produit p)
+    {
+        if(compprod<CAPACITE_PRD) {
+            tabprod[compprod] = p;
+            compprod++;
+            System.out.println("produit ajouté ");
+        }
+        else{
+
+            System.out.println("Magasin plein");
+        }
     }
-public void ajouter (Produit p , int cmp , int id , String adresse , int capacite) {
+    public void afficher()
+    {
 
-        
+        System.out.println("identifiant :"+this.identifiant+"adresse :"+adresse);
+        for (int i=0;i<compprod;i++)
+        {
 
-
-}
-
-    public Produit[] getTab() {
-        return tab;
-    }
-
-    public void setTab(Produit[] tab) {
-        this.tab = tab;
-    }
-
-    public int getComptprod() {
-        return comptprod;
-    }
-
-    public void setComptprod(int comptprod) {
-        this.comptprod = comptprod;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getAdresse() {
-        return adresse;
-    }
-
-    public void setAdresse(String adresse) {
-        this.adresse = adresse;
-    }
-
-    public int getCapacite() {
-        return capacite;
-    }
-
-    public void setCapacite(int capacite) {
-        this.capacite = capacite;
+            System.out.println("Marque :"+tabprod[i].marque);
+            System.out.println("libelle :"+tabprod[i].libelle);
+            // System.out.println("date :"+tabprod[i].dateexp);
+            System.out.println("prix :"+tabprod[i].prix);
+            System.out.println("Identifiant :"+tabprod[i].identifiant);
+        }
     }
 }

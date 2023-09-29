@@ -35,4 +35,24 @@ public class Produit {
                 ", prix=" + prix +
                 '}';
     }
+     public boolean Compare (Produit p) {
+
+        if (this.identifiant==p.identifiant)
+        {
+            return true ;
+        } else
+             return false  ;
+    }
+
+    public boolean Compare (Produit p1,Produit p2) {
+
+        if (p1.identifiant==p2.identifiant)
+        {
+            return true ;
+        } else
+            return false  ;
+    }
+
+
+
 }
