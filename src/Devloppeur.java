@@ -4,5 +4,14 @@ public class Devloppeur {
 public Devloppeur (){
 
 }
+public Devloppeur(String n)
+{
+ name=n;
+}
+public String toString()
+{
+ return "name :"+name;
+
+}
 
 }
