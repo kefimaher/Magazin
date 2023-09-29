@@ -1,4 +1,8 @@
 public class Devloppeur {
 
-     private String
+     String name  ;
+public Devloppeur (){
+
+}
+
 }

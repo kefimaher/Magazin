@@ -11,6 +11,16 @@ public class Magazin {
     {
         this.adresse=adresse ;
         this.capacite = capacite ;
-    };
+    }
+
+    public Magazin (int id,String adresse ){
+        this.id = id ;
+        this.adresse = adresse  ;
+    }
+public void ajouter (Produit p , int cmp , int id , String adresse , int capacite) {
+
+
+
+}
 
 }
