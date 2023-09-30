@@ -52,7 +52,4 @@ public class Produit {
         } else
             return false  ;
     }
-
-
-
 }
